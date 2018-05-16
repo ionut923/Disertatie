@@ -42,6 +42,5 @@ public class Test_CompleteAPurchase extends BaseTest {
 		checkoutSteps.verifyOrderConfirmationMessage();
 		checkoutSteps.navigateToOrderHistory();
 		orderHistorySteps.verifyOrderPresentInHistory();
-
 	}
 }

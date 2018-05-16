@@ -2,6 +2,7 @@ package com.steps;
 
 import static org.junit.Assert.assertEquals;
 
+import net.serenitybdd.core.Serenity;
 import net.serenitybdd.core.annotations.findby.By;
 import net.thucydides.core.annotations.Step;
 
@@ -22,6 +23,10 @@ public class CheckoutSteps extends GeneralSteps{
 	public void verifyOrderConfirmationMessage() {
 		String actualMessage = getDriver().findElement(By.cssSelector("#center_column h1")).getText();
 		assertEquals("Checkout failed", "ORDER CONFIRMATION", actualMessage);
+		
+		String message = getDriver().findElement(By.cssSelector(".box ")).getText();
+		Serenity.getCurrentSession().put("message", message);
+		System.out.println(message);
 	}
 	
 	@Step
