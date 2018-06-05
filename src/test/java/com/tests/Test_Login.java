@@ -14,7 +14,7 @@ import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 
 @RunWith(SerenityRunner.class)
-public class LoginTest extends BaseTest {
+public class Test_Login extends BaseTest {
 
 	@Managed(uniqueSession = true)
 	public WebDriver webdriver;

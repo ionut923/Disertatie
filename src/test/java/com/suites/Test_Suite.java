@@ -4,14 +4,16 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
-import com.tests.LoginTest;
+import com.tests.Test_Login;
+import com.tests.Test_ManipulateCart;
 import com.tests.Test_CompleteAPurchase;
 import com.tests.Test_ContactSupportTeam;
 import com.tests.Test_CreateAccount;
+import com.tests.Test_SignUpForNewsletter;
 
 @RunWith(Suite.class)
-@SuiteClasses({ LoginTest.class, Test_ContactSupportTeam.class, Test_CreateAccount.class,
-		Test_CompleteAPurchase.class })
+@SuiteClasses({ Test_Login.class, Test_ContactSupportTeam.class, Test_CreateAccount.class,
+		Test_CompleteAPurchase.class, Test_SignUpForNewsletter.class, Test_ManipulateCart.class })
 
 public class Test_Suite {
 

@@ -32,6 +32,10 @@ public class GeneralPage extends AbstractPage {
 	public void clickButtonById(String id) {
 		getDriver().findElement(By.id(id)).click();
 	}
+	
+	public void clickButtonByCssSelector(String selector) {
+		getDriver().findElement(By.cssSelector(selector)).click();
+	}
 
 	public void verifyTitle(String title) {
 		verifyTitle(title);
@@ -65,6 +69,12 @@ public class GeneralPage extends AbstractPage {
 		field.sendKeys(inputValue);
 	}
 
+	public void clickOnButtonByName(String name) {
+		waitUntilContentLoads();
+		getDriver().findElement(By.cssSelector("button[name='" + name + "']")).click();
+		
+		
+	}
 	public void clickOnButton(String name) {
 		waitUntilContentLoads();
 		List<WebElement> buttonList = getDriver().findElements(By.cssSelector("button"));
