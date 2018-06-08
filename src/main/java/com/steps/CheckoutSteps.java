@@ -16,6 +16,7 @@ public class CheckoutSteps extends GeneralSteps{
 		getCheckoutPage().processAddress();
 		getCheckoutPage().agreeeToTerms();
 		getCheckoutPage().processCarrier();
+		// trebuie specifica ce metoda de plata
 		getCheckoutPage().selectPaymentMethod();
 		getCheckoutPage().confirmOrder();
 	}
@@ -25,6 +26,7 @@ public class CheckoutSteps extends GeneralSteps{
 		assertEquals("Checkout failed", "ORDER CONFIRMATION", actualMessage);
 		
 		String message = getDriver().findElement(By.cssSelector(".box ")).getText();
+		//rename to order confirmation message
 		Serenity.getCurrentSession().put("message", message);
 		System.out.println(message);
 	}

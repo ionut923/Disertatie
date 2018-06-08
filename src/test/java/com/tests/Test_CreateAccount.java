@@ -35,7 +35,9 @@ public class Test_CreateAccount extends BaseTest {
 		headerSteps.openLoginForm();
 		authenticationSteps.enterEmail();
 		authenticationSteps.clickCreateAnAccountButton();
+		//TODO complete account form
 		createAccountSteps.completeAccountCreation();
+		//TODO verify numele userului este logat
 		createAccountSteps.verifyUserOnAccountPage();
 	}
 }
