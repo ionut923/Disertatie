@@ -34,15 +34,15 @@ public class Test_ContactSupportTeam extends BaseTest {
 	public void test_ContactSupportTeam() {
 		generalSteps.navigateTo(EnvironmentConstants.BASE_URL);
 		headerSteps.openContactForm();
+		//TODO create stepgroup "complete contact message" unde paelezi direct completarea de inpututi din page
 		contactSteps.selectMessageTarget();
 		contactSteps.enterEmailAdress();
 		contactSteps.enterOrderRefference();
 		contactSteps.enterMesage();
+		//TODO rename in click On send button
 		contactSteps.clickSubmitButton();
 		contactSteps.verifySuccessMessage();
+		//TODO dece?
 		headerSteps.goToHomepage();
-		
-
-		
 	}
 }

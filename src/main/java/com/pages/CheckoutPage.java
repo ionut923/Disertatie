@@ -3,6 +3,7 @@ package com.pages;
 import net.serenitybdd.core.annotations.findby.By;
 
 public class CheckoutPage extends GeneralPage {
+	//use click on button based on button name from general page
 	public void proceedToCheckput() {
 		waitUntilContentLoads();
 		getDriver().findElement(By.cssSelector(".cart_navigation.clearfix a[title=\"Proceed to checkout\"]")).click();

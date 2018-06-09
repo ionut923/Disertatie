@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="com.tests.Test_ManipulateCart" skipped="0" tests="1" time="24.11" timestamp="2018-06-07T20:28:04.593324800+03:00[Europe/Athens]"><testcase classname="com.tests.Test_ManipulateCart" name="Test  manipulate cart"><failure message="The number was not refreshed" type="junit.framework.AssertionFailedError">The number was not refreshed</failure><system-err>The number was not refreshed&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="com.tests.Test_ManipulateCart" skipped="0" tests="1" time="24.83" timestamp="2018-06-09T11:40:12.601143300+03:00[Europe/Athens]"><testcase classname="com.tests.Test_ManipulateCart" name="Test  manipulate cart"><failure message="The number was not refreshed" type="junit.framework.AssertionFailedError">The number was not refreshed</failure><system-err>The number was not refreshed&#13;
 junit.framework.Assert.fail(Assert.java:57)&#13;
 junit.framework.Assert.assertTrue(Assert.java:22)&#13;
 com.steps.ProductDetailsSteps.verifyNumberOfProducts(ProductDetailsSteps.java:37)&#13;
-com.tests.Test_ManipulateCart.test_ManipulateCart(Test_ManipulateCart.java:45)&#13;
+com.tests.Test_ManipulateCart.test_ManipulateCart(Test_ManipulateCart.java:49)&#13;
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
 java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;

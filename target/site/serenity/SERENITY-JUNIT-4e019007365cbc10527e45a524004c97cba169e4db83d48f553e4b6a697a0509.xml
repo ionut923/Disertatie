@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="com.tests.Test_Login" skipped="0" tests="1" time="12.56" timestamp="2018-06-07T20:26:27.621708700+03:00[Europe/Athens]"><testcase classname="com.tests.Test_Login" name="Login test"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="com.tests.Test_Login" skipped="0" tests="1" time="12.04" timestamp="2018-06-09T11:38:27.442586700+03:00[Europe/Athens]"><testcase classname="com.tests.Test_Login" name="Login test"/></testsuite>

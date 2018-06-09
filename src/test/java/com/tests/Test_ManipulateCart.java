@@ -16,6 +16,7 @@ import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 
 @RunWith(SerenityRunner.class)
+//TODO gaseste un nume mai clar
 public class Test_ManipulateCart extends BaseTest {
 	@Managed(uniqueSession = true)
 	public WebDriver webdriver;
@@ -36,10 +37,13 @@ public class Test_ManipulateCart extends BaseTest {
 		generalSteps.navigateTo(EnvironmentConstants.BASE_URL);
 		loginSteps.login(EnvironmentConstants.USER, EnvironmentConstants.PASS);
 		generalSteps.navigateTo(EnvironmentConstants.PRODUCT_DETAIL_PAGE_URL);
+		//TODO stepgroup cu dou parametri (produsul, cantitatea)
 		productDetailsSteps.addOneMoreProduct();
 		productDetailsSteps.addProductTocart();
+		//TODO verify product name  + cantitate
 		productDetailsSteps.verifyNumberOfProducts("2");
 		productDetailsSteps.closeCartPreviewWindow();
+		//TODO go to checkout and remove product cu doi parametrii(produs, cantitateToBeRemove)
 		productDetailsSteps.removeOneProduct();
 		productDetailsSteps.addProductTocart();
 		productDetailsSteps.verifyNumberOfProducts("1");

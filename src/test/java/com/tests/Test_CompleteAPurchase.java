@@ -35,6 +35,7 @@ public class Test_CompleteAPurchase extends BaseTest {
 	public void test_CompleteAPurchase() {
 		generalSteps.navigateTo(EnvironmentConstants.BASE_URL);
 		loginSteps.login(EnvironmentConstants.USER, EnvironmentConstants.PASS);
+		//TODO trebuie facut step de open product details
 		generalSteps.navigateTo(EnvironmentConstants.PRODUCT_DETAIL_PAGE_URL);
 		productDetailsSteps.addProductTocart();
 		productDetailsSteps.proceedToCheckput();
