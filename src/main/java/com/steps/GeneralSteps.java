@@ -4,6 +4,7 @@ import com.pages.CheckoutPage;
 import com.pages.CreateAccountPage;
 import com.pages.GeneralPage;
 import com.pages.HeaderPage;
+import com.pages.Homepage;
 import com.pages.LoginPage;
 import com.pages.OrderHystoryPage;
 import com.pages.ProductDetailPage;
@@ -56,6 +57,9 @@ public class GeneralSteps extends ScenarioSteps {
 	
 	public LoginPage getLoginPage() {
 		return getPages().currentPageAt(LoginPage.class);
+	}
+	public Homepage getHomepage() {
+		return getPages().currentPageAt(Homepage.class);
 	}
 	
 	public ProductDetailPage getProductDetailPage() {

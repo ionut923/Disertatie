@@ -24,7 +24,7 @@ public class CheckoutPage extends GeneralPage {
 		getDriver().findElement(By.id("cgv")).click();
 	}
 	
-	public void selectPaymentMethod() {
+	public void selectBankWirePaymentMethod() {
 		waitUntilContentLoads();
 		getDriver().findElement(By.className("bankwire")).click();
 	}

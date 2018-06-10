@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.steps.CheckoutSteps;
 import com.steps.GeneralSteps;
+import com.steps.HomepageSteps;
 import com.steps.LoginSteps;
 import com.steps.OrderHistorySteps;
 import com.steps.ProductDetailsSteps;
@@ -16,7 +17,7 @@ import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 
 @RunWith(SerenityRunner.class)
-public class Test_CompleteAPurchase extends BaseTest {
+public class Test_CompleteAPurchaseBankWirePaymentMethod extends BaseTest {
 	@Managed(uniqueSession = true)
 	public WebDriver webdriver;
 
@@ -30,16 +31,18 @@ public class Test_CompleteAPurchase extends BaseTest {
 	public LoginSteps loginSteps;
 	@Steps
 	public OrderHistorySteps orderHistorySteps;
+	@Steps
+	public HomepageSteps homepageSteps;
 
 	@Test
-	public void test_CompleteAPurchase() {
+	public void test_CompleteAPurchaseBankWirePaymentMethod() {
 		generalSteps.navigateTo(EnvironmentConstants.BASE_URL);
 		loginSteps.login(EnvironmentConstants.USER, EnvironmentConstants.PASS);
-		//TODO trebuie facut step de open product details
-		generalSteps.navigateTo(EnvironmentConstants.PRODUCT_DETAIL_PAGE_URL);
+		generalSteps.navigateTo(EnvironmentConstants.BASE_URL);
+		homepageSteps.selectDesiredProduct("Blouse");
 		productDetailsSteps.addProductTocart();
-		productDetailsSteps.proceedToCheckput();
-		checkoutSteps.completeCheckput();
+		productDetailsSteps.proceedToCheckout();
+		checkoutSteps.completeCheckout();
 		checkoutSteps.verifyOrderConfirmationMessage();
 		checkoutSteps.navigateToOrderHistory();
 		orderHistorySteps.verifyOrderPresentInHistory();

@@ -23,6 +23,10 @@ public class GeneralPage extends AbstractPage {
 	public void enterInputValue(String id, String value) {
 		getDriver().findElement(By.id(id)).sendKeys(value);
 	}
+	
+	public void clearInputValue(String id) {
+		getDriver().findElement(By.id(id)).clear();
+	}
 
 	public void selectDropdownValue(String id, String value) {
 		WebElement elem = getDriver().findElement(By.cssSelector(id));

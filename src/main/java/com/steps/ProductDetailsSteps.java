@@ -15,7 +15,7 @@ public class ProductDetailsSteps extends GeneralSteps {
 	}
 
 	@Step
-	public void proceedToCheckput() {
+	public void proceedToCheckout() {
 		getProductDetailPage().proceedToCheckput();
 	}
 

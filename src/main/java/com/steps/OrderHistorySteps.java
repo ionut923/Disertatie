@@ -11,8 +11,7 @@ public class OrderHistorySteps extends GeneralSteps{
 	public void verifyOrderPresentInHistory() {
 		String actualMessage = getDriver().findElement(By.cssSelector("#order-list .first_item .history_link.bold.footable-first-column")).getText();
 		System.out.println(actualMessage);
-		String mesage = (String) Serenity.getCurrentSession().get("message");
-		System.out.println(mesage);
+		String mesage = (String) Serenity.getCurrentSession().get("orderConfirmationMessage");
 		Assert.assertTrue(mesage.contains(actualMessage));
 	}
 }
