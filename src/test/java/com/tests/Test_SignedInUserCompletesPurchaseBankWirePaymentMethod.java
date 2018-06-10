@@ -42,7 +42,7 @@ public class Test_SignedInUserCompletesPurchaseBankWirePaymentMethod extends Bas
 		homepageSteps.selectDesiredProduct("Blouse");
 		productDetailsSteps.addProductTocart();
 		productDetailsSteps.proceedToCheckout();
-		checkoutSteps.completeCheckout();
+		checkoutSteps.completeCheckoutWithBankWire();
 		checkoutSteps.verifyOrderConfirmationMessage();
 		checkoutSteps.navigateToOrderHistory();
 		orderHistorySteps.verifyOrderPresentInHistory();

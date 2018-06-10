@@ -28,6 +28,11 @@ public class CheckoutPage extends GeneralPage {
 		waitUntilContentLoads();
 		getDriver().findElement(By.className("bankwire")).click();
 	}
+	
+	public void selectCheckPaymentMethod() {
+		waitUntilContentLoads();
+		getDriver().findElement(By.className("cheque")).click();
+	}
 	public void confirmOrder() {
 		waitUntilContentLoads();
 		getDriver().findElement(By.cssSelector("#cart_navigation button")).click();

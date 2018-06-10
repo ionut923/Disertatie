@@ -11,12 +11,21 @@ public class CheckoutSteps extends GeneralSteps{
 	private static final long serialVersionUID = 1L;
 
 	@Step
-	public void completeCheckout() {
+	public void completeCheckoutWithBankWire() {
 		getCheckoutPage().proceedToCheckput();
 		getCheckoutPage().processAddress();
 		getCheckoutPage().agreeeToTerms();
 		getCheckoutPage().processCarrier();
 		getCheckoutPage().selectBankWirePaymentMethod();
+		getCheckoutPage().confirmOrder();
+	}
+	@Step
+	public void completeCheckoutWithCheque() {
+		getCheckoutPage().proceedToCheckput();
+		getCheckoutPage().processAddress();
+		getCheckoutPage().agreeeToTerms();
+		getCheckoutPage().processCarrier();
+		getCheckoutPage().selectCheckPaymentMethod();
 		getCheckoutPage().confirmOrder();
 	}
 	
