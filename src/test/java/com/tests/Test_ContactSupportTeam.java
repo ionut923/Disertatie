@@ -39,10 +39,7 @@ public class Test_ContactSupportTeam extends BaseTest {
 		contactSteps.enterEmailAdress();
 		contactSteps.enterOrderRefference();
 		contactSteps.enterMesage();
-		//TODO rename in click On send button
-		contactSteps.clickSubmitButton();
+		contactSteps.clickSendButton();
 		contactSteps.verifySuccessMessage();
-		//TODO dece?
-		headerSteps.goToHomepage();
 	}
 }

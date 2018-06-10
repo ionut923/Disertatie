@@ -32,7 +32,7 @@ public class ContactSteps {
 		contactPage.enterMesage();
 	}
 	@Step
-	public void clickSubmitButton() {
+	public void clickSendButton() {
 		contactPage.clickSubmitButton();
 	}
 	@Step
