@@ -11,11 +11,11 @@ public class OrderHistorySteps extends GeneralSteps {
 	private static final long serialVersionUID = 1L;
 
 	public void verifyOrderPresentInHistory() {
-		String actualMessage = getDriver()
+		String orderID = getDriver()
 				.findElement(By.cssSelector("#order-list .first_item .history_link.bold.footable-first-column"))
 				.getText();
-		String mesage = (String) Serenity.getCurrentSession().get("orderConfirmationMessage");
-		Assert.assertTrue(mesage.contains(actualMessage));
+		String orderConfirmationMesage = (String) Serenity.getCurrentSession().get("orderConfirmationMessage");
+		Assert.assertTrue(orderConfirmationMesage.contains(orderID));
 	}
 
 	public void verifyOrderDetailsInHistory(String paymentMethod) {

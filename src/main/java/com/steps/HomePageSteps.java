@@ -1,13 +1,13 @@
 package com.steps;
 
-import com.pages.Homepage;
+import com.pages.HomePage;
 
 import net.thucydides.core.annotations.Step;
 
-public class HomepageSteps extends GeneralSteps {
+public class HomePageSteps extends GeneralSteps {
 	
 	private static final long serialVersionUID = 1L;
-	Homepage homePage = new Homepage();
+	HomePage homePage = new HomePage();
 
 	@Step
 	public void selectDesiredProduct(String value) {

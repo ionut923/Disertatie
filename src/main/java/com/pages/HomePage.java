@@ -7,7 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import net.serenitybdd.core.annotations.findby.By;
 
-public class Homepage extends GeneralPage {
+public class HomePage extends GeneralPage {
 
 	public void selectDesiredProduct(String value) {
 		waitUntilContentLoads();
@@ -20,7 +20,4 @@ public class Homepage extends GeneralPage {
 			}
 		}
 	}
-	
-	
-
 }

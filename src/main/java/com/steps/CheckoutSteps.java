@@ -32,6 +32,7 @@ public class CheckoutSteps extends GeneralSteps{
 	public void verifyOrderConfirmationMessage() {
 		String actualMessage = getDriver().findElement(By.cssSelector("#center_column h1")).getText();
 		assertEquals("Checkout failed", "ORDER CONFIRMATION", actualMessage);
+		
 		String message = getDriver().findElement(By.cssSelector(".box ")).getText();
 		Serenity.getCurrentSession().put("orderConfirmationMessage", message);
 	}

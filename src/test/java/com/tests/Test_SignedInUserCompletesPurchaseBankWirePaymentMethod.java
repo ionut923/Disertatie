@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.steps.CheckoutSteps;
 import com.steps.GeneralSteps;
-import com.steps.HomepageSteps;
+import com.steps.HomePageSteps;
 import com.steps.LoginSteps;
 import com.steps.OrderHistorySteps;
 import com.steps.ProductDetailsSteps;
@@ -32,7 +32,7 @@ public class Test_SignedInUserCompletesPurchaseBankWirePaymentMethod extends Bas
 	@Steps
 	public OrderHistorySteps orderHistorySteps;
 	@Steps
-	public HomepageSteps homepageSteps;
+	public HomePageSteps homepageSteps;
 
 	@Test
 	public void test_SignedInUserCompletesPurchaseBankWirePaymentMethod() {
