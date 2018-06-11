@@ -11,12 +11,13 @@ public class ProductDetailsSteps extends GeneralSteps {
 
 	@Step
 	public void addProductTocart() {
+		getProductDetailPage().getInfoFromPDP();
 		getGeneralPage().clickButtonById("add_to_cart");
 	}
 
 	@Step
 	public void proceedToCheckout() {
-		getProductDetailPage().proceedToCheckput();
+		getProductDetailPage().proceedToCheckout();
 	}
 
 	@Step

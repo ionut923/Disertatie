@@ -38,13 +38,15 @@ public class Test_SignedInUserCompletesPurchaseBankWirePaymentMethod extends Bas
 	public void test_SignedInUserCompletesPurchaseBankWirePaymentMethod() {
 		generalSteps.navigateTo(EnvironmentConstants.BASE_URL);
 		loginSteps.login(EnvironmentConstants.USER, EnvironmentConstants.PASS);
-		generalSteps.navigateTo(EnvironmentConstants.BASE_URL);
+		homepageSteps.navigateToHomepage();
 		homepageSteps.selectDesiredProduct("Blouse");
 		productDetailsSteps.addProductTocart();
 		productDetailsSteps.proceedToCheckout();
+		checkoutSteps.verifyPriceAndExpectedProductAddedtoToCart();
 		checkoutSteps.completeCheckoutWithBankWire();
 		checkoutSteps.verifyOrderConfirmationMessage();
 		checkoutSteps.navigateToOrderHistory();
 		orderHistorySteps.verifyOrderPresentInHistory();
+		orderHistorySteps.verifyOrderDetailsInHistory("Bank wire");
 	}
 }

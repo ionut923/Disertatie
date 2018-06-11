@@ -14,4 +14,9 @@ public class HomepageSteps extends GeneralSteps {
 		getHomepage().selectDesiredProduct(value);
 	}
 	
+	@Step
+	public void navigateToHomepage() {
+		getGeneralPage().clickButtonByCssSelector("#header_logo img");
+	}
+	
 }

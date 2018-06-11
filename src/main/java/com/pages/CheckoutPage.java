@@ -1,5 +1,6 @@
 package com.pages;
 
+import net.serenitybdd.core.Serenity;
 import net.serenitybdd.core.annotations.findby.By;
 
 public class CheckoutPage extends GeneralPage {
@@ -40,5 +41,9 @@ public class CheckoutPage extends GeneralPage {
 	public void navigateToOrderHistory() {
 		waitUntilContentLoads();
 		getDriver().findElement(By.cssSelector(".button-exclusive")).click();
+	}
+	
+	public void verifyProductAddedtoToCartAndPrice() {
+				
 	}
 }

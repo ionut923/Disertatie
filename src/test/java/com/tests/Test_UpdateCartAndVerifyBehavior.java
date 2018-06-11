@@ -16,8 +16,7 @@ import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 
 @RunWith(SerenityRunner.class)
-//TODO gaseste un nume mai clar
-public class Test_ManipulateCart extends BaseTest {
+public class Test_UpdateCartAndVerifyBehavior extends BaseTest {
 	@Managed(uniqueSession = true)
 	public WebDriver webdriver;
 
