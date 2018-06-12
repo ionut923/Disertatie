@@ -1,6 +1,5 @@
 package com.pages;
 
-import net.serenitybdd.core.Serenity;
 import net.serenitybdd.core.annotations.findby.By;
 
 public class CheckoutPage extends GeneralPage {

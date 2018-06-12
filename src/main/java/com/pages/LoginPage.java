@@ -10,6 +10,10 @@ public class LoginPage extends GeneralPage {
 
 	@FindBy(css = "#passwd")
 	private WebElementFacade passwordInput;
+	
+	@FindBy(css = ".lost_password.form-group")
+	private WebElementFacade forgotPWLink;
+	
 
 	public void enterUsername(String username) {
 		usernameInput.sendKeys(username);
@@ -22,4 +26,9 @@ public class LoginPage extends GeneralPage {
 	public void clickSubmitLoginButton() {
 		clickButtonById("SubmitLogin");
 	}
+	
+	public void clickOnForgetPasswordLink() {
+		forgotPWLink.click();
+	}
 }
+

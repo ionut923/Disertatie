@@ -18,27 +18,6 @@ public class GeneralSteps extends ScenarioSteps {
 	private static final long serialVersionUID = 1L;
 	GeneralPage generalPage = new GeneralPage();
 
-	@Step
-	public void clickOnDropdown(String dropdownId) {
-		generalPage.clickOnDropdown(dropdownId);
-	}
-
-	@Step
-	public void selectDesiredDropdownValue(String dropdownId, String value) {
-		generalPage.selectDesiredDropdownValue(dropdownId, value);
-	}
-
-	@StepGroup
-	public void selectDropdownValue(String dropdownId, String value) {
-		clickOnDropdown(dropdownId);
-		selectDesiredDropdownValue(dropdownId, value);
-	}
-
-	@Step
-	public void clickOnContinuaButton() {
-		generalPage.clickOnContinuaButton();
-	}
-
 	public void navigateTo(String URL) {
 		getDriver().get(URL);
 	}
@@ -54,22 +33,23 @@ public class GeneralSteps extends ScenarioSteps {
 	public HeaderPage getHeaderPage() {
 		return getPages().currentPageAt(HeaderPage.class);
 	}
-	
+
 	public LoginPage getLoginPage() {
 		return getPages().currentPageAt(LoginPage.class);
 	}
+
 	public HomePage getHomepage() {
 		return getPages().currentPageAt(HomePage.class);
 	}
-	
+
 	public ProductDetailPage getProductDetailPage() {
 		return getPages().currentPageAt(ProductDetailPage.class);
 	}
-	
+
 	public CheckoutPage getCheckoutPage() {
 		return getPages().currentPageAt(CheckoutPage.class);
 	}
-	
+
 	public OrderHystoryPage getOrderHystoryPage() {
 		return getPages().currentPageAt(OrderHystoryPage.class);
 	}
