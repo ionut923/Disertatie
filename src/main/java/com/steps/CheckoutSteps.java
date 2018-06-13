@@ -12,7 +12,7 @@ public class CheckoutSteps extends GeneralSteps{
 
 	@Step
 	public void completeCheckoutWithBankWire() {
-		getCheckoutPage().proceedToCheckput();
+		getCheckoutPage().proceedToCheckout();
 		getCheckoutPage().processAddress();
 		getCheckoutPage().agreeeToTerms();
 		getCheckoutPage().processCarrier();
@@ -21,7 +21,7 @@ public class CheckoutSteps extends GeneralSteps{
 	}
 	@Step
 	public void completeCheckoutWithCheque() {
-		getCheckoutPage().proceedToCheckput();
+		getCheckoutPage().proceedToCheckout();
 		getCheckoutPage().processAddress();
 		getCheckoutPage().agreeeToTerms();
 		getCheckoutPage().processCarrier();
