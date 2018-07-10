@@ -35,7 +35,7 @@ public class Test_SignedInUserCompletesPurchaseCheckPaymentMethod extends BaseTe
 	public HomePageSteps homepageSteps;
 
 	@Test
-	public void test_SignedInUserCompletesPurchaseBankWirePaymentMethod() {
+	public void test_SignedInUserCompletesPurchaseCheckPaymentMethod() {
 		generalSteps.navigateTo(EnvironmentConstants.BASE_URL);
 		loginSteps.login(EnvironmentConstants.USER, EnvironmentConstants.PASS);
 		generalSteps.navigateTo(EnvironmentConstants.BASE_URL);
