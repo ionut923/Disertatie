@@ -165,7 +165,7 @@
 			</activation>
 			<properties>
 				<webdriver.gecko.path>${basedir}${file.separator}resources${file.separator}geckodriver.exe</webdriver.gecko.path>
-				<webdriver.chrome.path>${basedir}${file.separator}resources${file.separator}chromedriver237.exe</webdriver.chrome.path>
+				<webdriver.chrome.path>${basedir}${file.separator}resources${file.separator}chromedriver238.exe</webdriver.chrome.path>
 				<webdriver.ie.path>${basedir}${file.separator}resources${file.separator}IEDriverServer.exe</webdriver.ie.path>
 			</properties>
 		</profile>
@@ -178,7 +178,7 @@
 			</activation>
 			<properties>
 				<webdriver.gecko.path>resources${file.separator}geckodriverLinux</webdriver.gecko.path>
-				<webdriver.chrome.path>resources${file.separator}chromedriverlinux237</webdriver.chrome.path>
+				<webdriver.chrome.path>resources${file.separator}chromedriverlinux238</webdriver.chrome.path>
 <!-- 				 <webdriver.chrome.path>/opt/chromedriver-2.43</webdriver.chrome.path> -->
 				<webdriver.ie.path>resources${file.separator}chromedriver232</webdriver.ie.path>
 			</properties>
