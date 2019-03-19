@@ -31,7 +31,7 @@ public class Test_ContactSupportTeam extends BaseTest {
 	
 
 	@Test
-	public void test_ContactSupportTeam() {
+	public void test_ContactSupportTeam(){
 		generalSteps.navigateTo(EnvironmentConstants.BASE_URL);
 		headerSteps.openContactForm();
 		//TODO create stepgroup "complete contact message" unde paelezi direct completarea de inpututi din page

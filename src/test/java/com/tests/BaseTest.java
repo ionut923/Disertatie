@@ -15,6 +15,5 @@ public class BaseTest {
 
 		System.setProperty("runPlatform", "desktop");
 		System.setProperty("runEnv", "env");
-
 	}
 }

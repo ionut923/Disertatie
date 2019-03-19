@@ -153,6 +153,28 @@
 			<artifactId>pdfbox</artifactId>
 			<version>2.0.8</version>
 		</dependency>
+		
+		
+	<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+<dependency>
+    <groupId>javax.xml.bind</groupId>
+    <artifactId>jaxb-api</artifactId>
+    <version>2.3.0-b170201.1204</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/javax.activation/activation -->
+<dependency>
+    <groupId>javax.activation</groupId>
+    <artifactId>activation</artifactId>
+    <version>1.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-runtime -->
+<dependency>
+    <groupId>org.glassfish.jaxb</groupId>
+    <artifactId>jaxb-runtime</artifactId>
+    <version>2.3.0-b170127.1453</version>
+</dependency>
 
 	</dependencies>
 	<profiles>
@@ -259,29 +281,7 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>axistools-maven-plugin</artifactId>
 				<version>1.4</version>
-				<executions>
-					<execution>
-						<id>ax-ws-autogen</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>wsdl2java</goal>
-						</goals>
-						<configuration>
-							<sourceDirectory>/home/mihaibarta/Desktop</sourceDirectory>
-							<wsdlFiles>
-								<wsdlFile>legal1.wsdl</wsdlFile>
-							</wsdlFiles>
-							<packageSpace>legalOpinion</packageSpace>
-							<testCases>false</testCases>
-							<serverSide>false</serverSide>
-							<subPackageByFileName>false</subPackageByFileName>
-							<outputDirectory>src/main/generated</outputDirectory>
-							<verbose>true</verbose>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-
+</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
@@ -304,3 +304,5 @@
 	</build>
 
 </project>
+
+  
