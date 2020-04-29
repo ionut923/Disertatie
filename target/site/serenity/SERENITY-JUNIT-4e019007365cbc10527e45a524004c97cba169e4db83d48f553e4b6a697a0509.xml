@@ -1,13 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="com.tests.Test_Login" skipped="0" tests="1" time="12.41" timestamp="2019-03-75 08:41:32"><testcase classname="com.tests.Test_Login" name="Login test"><failure message="account creation failed expected:&lt;[My account] - My Store&gt; but was:&lt;[Login] - My Store&gt;" type="org.junit.ComparisonFailure">account creation failed expected:&lt;[My account] - My Store&gt; but was:&lt;[Login] - My Store&gt;</failure><system-err>account creation failed expected:&lt;[My account] - My Store&gt; but was:&lt;[Login] - My Store&gt;
-com.steps.CreateAccountSteps.verifyUserOnAccountPage(CreateAccountSteps.java:52)
-com.tests.Test_Login.loginTest(Test_Login.java:33)
-java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
-org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="com.tests.Test_Login" skipped="0" tests="1" time="13.19" timestamp="2020-04-120 03:37:21"><testcase classname="com.tests.Test_Login" name="Login test"><failure message="account creation failed expected:&lt;[My account] - My Store&gt; but was:&lt;[Login] - My Store&gt;" type="org.junit.ComparisonFailure">account creation failed expected:&lt;[My account] - My Store&gt; but was:&lt;[Login] - My Store&gt;</failure><system-err>account creation failed expected:&lt;[My account] - My Store&gt; but was:&lt;[Login] - My Store&gt;&#13;
+com.steps.CreateAccountSteps.verifyUserOnAccountPage(CreateAccountSteps.java:52)&#13;
+com.tests.Test_Login.loginTest(Test_Login.java:33)&#13;
 </system-err></testcase></testsuite>
